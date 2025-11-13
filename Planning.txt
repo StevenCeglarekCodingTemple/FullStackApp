@@ -1,0 +1,60 @@
+
+
+-- Pokemon app 
+-- Restaraunt 
+-- Progress Tracker 
+-- Ecomm (This would be with Backend and Frontend)
+-- Sport Betting App
+-- Calorie/Fitness tracker  -- Winner
+
+
+Functionality of Application
+
+-- Users must be able to register an account
+-- Users must be able to login
+    - We want to authenticate our users
+-- Users should be able to log a meal
+-- Users should be able to log a workout
+-- User should be able to view all logged meals
+-- User should be able to view all logged workouts
+-- Users should be able to view their log history stats 
+    (How many logs, how many calories burned, how many calories consumed, etc...)
+-- When a User registers, they can apply to be on a free trial of app (For 1 week, or more...)
+
+
+
+Optional Functionality
+-- a type of Friends list leaderboard (Something to look at later)
+-- Have a way to see app in Metric or US System
+-- Have a referral system, if a User refers someone to the app, they get a month for free
+    (Phone Number or address would stop abuse of this system)
+-- Have a UI for sleep tracking and steps tracking (Maybe connected to apple watch, or garmin) 
+
+
+-- How our UI should be structured/organized
+
+-- Welome Page (User is not signed in)
+    - This would display information about our app and why they should sign up
+    - Can showcase Science articles, explaining why our app will improve their lives
+
+-- Register Page
+    - Register Form
+
+-- User Dashboard Page
+    - Sidebar displaying settings and other more detailed views of information
+    - Dashboard shows stats on logs for the day (or weekly)
+    - Tabs for logging meals/workouts
+
+
+
+Technologies being used to develop our APP
+
+-- Flask as Backend (Python)
+    -- DB will be SQLite
+    -- SQLAlchemy as ORM
+-- React JS as Frontend
+    -- Material UI and Bootstrap as CSS Libraries
+    
+
+
+

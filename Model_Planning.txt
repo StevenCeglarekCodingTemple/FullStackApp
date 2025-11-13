@@ -1,0 +1,48 @@
+
+
+-- Users
+    - Id - primary key
+    - First Name
+    - Last Name
+    - Email
+    - Password
+    - Is Paid ('Y', or 'N')
+    - Create Date
+    - Weight
+    - Height
+    - DOB
+    - Goal Weight (Optional Field)
+    - sex (M or F)
+
+    -- List of Workouts
+    -- List of Meals
+
+-- Workout sessions
+    - Id
+    - Name
+    - Duration
+    - Type of Workout (Cardio, Weights, etc..)
+    - Calories Burned
+    - Create Date
+    - User Id (User who logged the workout)
+
+(Research food API that these kind of apps use)
+-- Meals
+    - Id
+    - Meal Category (Breakfast, Lunch, Dinner, Snack)
+    - Total Calories
+    - Create Date (Date Entered)
+    - User Id (User who logged the Meal)
+
+    -- List of Meal Items
+
+-- Food Items
+    - Id
+    - Name of food
+    - Calories
+
+
+-- Goals for Future Sprints
+
+    -- Have a user be able to enter each individual workout to add to a full workout, similar to how meals are done.
+        - Having a new table that holds pre-created workouts (Similar to Food Items table)
