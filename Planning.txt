@@ -58,3 +58,14 @@ Technologies being used to develop our APP
 
 
 
+
+Name: Fastracker
+
+
+Color Palette: https://coolors.co/palette/55dde0-33658a-2f4858-f6ae2d-f26419
+
+Strong Cyan: 55DDE0
+Baltic Blue: 33658A
+Charcoal Blue: 2F4858
+Honey Bronze: F6AE2D
+Blaze Orange: F26419

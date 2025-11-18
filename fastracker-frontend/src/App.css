@@ -1,0 +1,5 @@
+.new-container {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    min-height: 100vh !important; /* Ensures container takes full viewport height */
+}
