@@ -1,0 +1,21 @@
+.sideBarMenu {
+    border: 2px solid #55DDE0;
+    border-radius: 15px;
+    width: 70%;
+    min-height: 400px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 10px 10px 15px #55DDE0;
+
+}
+
+.welcome {
+    border-bottom: 2px solid #33658A;
+}
+
+.sidebar-nav-links {
+    text-decoration: none;
+    color: #33658A;
+    font-size: 1.3rem;
+    font-weight: bold;
+}

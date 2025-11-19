@@ -5,11 +5,13 @@ from .blueprints.users import users_bp
 from .blueprints.workout_sessions import workout_sessions_bp
 from .blueprints.meals import meals_bp
 from .blueprints.food_items import food_items_bp
+from flask_cors import CORS
 
 def create_app(config_name):
 
     app = Flask(__name__)
     app.config.from_object(f'config.{config_name}')
+    CORS(app)
 
     # Initialize extensions for our instance of app
     db.init_app(app)

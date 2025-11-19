@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer';
 import LoginPage from './views/LoginPage/LoginPage';
 import RegisterPage from './views/RegisterPage/RegisterPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Dashboard from './views/Dashboard/Dashboard';
 
 function App() {
 
@@ -16,8 +17,9 @@ function App() {
         <NavBar />
         <Routes>
           <Route path='/' element={<HomePage />} />
-          <Route path='/log-in' element={<LoginPage />} />
+          <Route path='/login' element={<LoginPage />} />
           <Route path='/register' element={<RegisterPage />} />
+          <Route path='/dashboard' element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
       <Footer />

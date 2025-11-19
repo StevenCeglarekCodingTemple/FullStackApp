@@ -22,25 +22,26 @@ export const AuthProvider = ({ children }) => {
         setUser(userData);
     }, [])
 
-    const login = async (email, password) => {
+    const login = async (formData) => {
         const response = await fetch('http://localhost:5002/users/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({
-                email: email,
-                password: password
-            })
+            body: JSON.stringify(formData)
         })
 
         const loginData = await response.json()
+        if ('messages' in loginData) {
+            return loginData.messages;
+        } else {
+            setToken(loginData.auth_token)
+            setUser(loginData.user)
 
-        setToken(loginData.auth_token)
-        setUser(loginData.user)
-
-        localStorage.setItem('token', loginData.auth_token)
-        localStorage.setItem('user', JSON.stringify(loginData.user))
+            localStorage.setItem('token', loginData.auth_token)
+            localStorage.setItem('user', JSON.stringify(loginData.user))
+            return '';
+        }
     }
 
     const registerUser = async (registerData) => {

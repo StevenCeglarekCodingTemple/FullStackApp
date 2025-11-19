@@ -31,6 +31,7 @@ def register_user():
 def login():
     try:
         credentials = login_schema.load(request.json)
+        print(credentials)
     except KeyError:
         return jsonify({'messages': 'Invalid payload, expecting email and password'})
     

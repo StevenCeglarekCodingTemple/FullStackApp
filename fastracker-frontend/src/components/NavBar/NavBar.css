@@ -1,6 +1,6 @@
 .site-header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     background-color: #F26419;
     padding: 20px;
@@ -15,7 +15,7 @@
 
 .navbar ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 20px;
     list-style: none;
 }
