@@ -14,7 +14,7 @@ const SideBarMenu = () => {
             <NavLink className='sidebar-nav-links' to='/logWorkout'>Log Workout</NavLink>
         </div>
         <div className='m-3'>
-            <NavLink className='sidebar-nav-links' to='/logMeal'>Log Meal</NavLink>
+            <NavLink className='sidebar-nav-links' to='/logMeals'>Log Meals</NavLink>
         </div>
         <div className='m-3'>
             <NavLink className='sidebar-nav-links' to='/profile'>Profile</NavLink>

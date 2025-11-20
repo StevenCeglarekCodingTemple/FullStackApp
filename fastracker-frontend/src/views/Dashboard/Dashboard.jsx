@@ -8,17 +8,25 @@ const Dashboard = () => {
   return (
     <div>
         {isAuthenticated ?
-            <div className='container-fluid d-flex flex-row'>
                 <div>
-                    <SideBarMenu />
+                    <div>
+                        <h1>Stats of Food</h1>
+
+                    </div>
+
+                    <div>
+                        <h1>Stats of Workouts</h1>
+
+                    </div>
+
+                    <div>
+                        <h1>Food Items</h1>
+
+                    </div>
                 </div>
-                <div style={{width: '600px'}}>
-                    <LogWorkoutForm />
-                </div>
-            </div> 
-        :
-        <h1 className='text-danger'>Please login to view this page</h1>   
-    }
+            :
+         <h1 className='text-danger'>Please login to view this page</h1>   
+        }
         
     </div>
   )

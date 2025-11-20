@@ -35,7 +35,7 @@ const LogWorkoutForm = () => {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        setFormData(prevData => ({...prevData, [name]: value}));
+        setFormData(prevData => ({ ...prevData, [name]: value }));
     }
 
     const handleSubmit = (e) => {
@@ -44,43 +44,43 @@ const LogWorkoutForm = () => {
         navigate('/dashboard')
     }
 
-  return (
-    <div>
-        <form action="" onSubmit={handleSubmit}>
-            <div className='row'>
-                <div className='col-3'></div>
-                <div className='col-6 form-group mt-4'>
-                    {/* {errors && <span className='text-danger'>{errors}</span>} */}
-                    <input type="text" onChange={handleChange} name='name' placeholder='Name of Workout...' className='form-control' value={formData.name} />
+    return (
+        <div>
+            <form action="" onSubmit={handleSubmit}>
+                <div className='row'>
+                    <div className='col-3'></div>
+                    <div className='col-6 form-group mt-4'>
+                        {/* {errors && <span className='text-danger'>{errors}</span>} */}
+                        <input type="text" onChange={handleChange} name='name' placeholder='Name of Workout...' className='form-control' value={formData.name} />
+                    </div>
                 </div>
-            </div>
-            <div className='row'>
-                <div className='col-3'></div>
+                <div className='row'>
+                    <div className='col-3'></div>
                     <div className='col-6 form-group mt-4'>
                         <input type="time" onChange={handleChange} step="60" name='duration' placeholder='Duration...' className='form-control' value={formData.duration} />
                     </div>
-            </div>
-            <div className='row'>
-                <div className='col-3'></div>
+                </div>
+                <div className='row'>
+                    <div className='col-3'></div>
                     <div className='col-6 form-group mt-4'>
                         <input type="text" onChange={handleChange} name='workout_type' placeholder='Workout Type...' className='form-control' value={formData.workout_type} />
                     </div>
-            </div>
-            <div className='row'>
-                <div className='col-3'></div>
+                </div>
+                <div className='row'>
+                    <div className='col-3'></div>
                     <div className='col-6 form-group mt-4'>
                         <input type="number" onChange={handleChange} name='calories_burned' placeholder='Calories Burned...' className='form-control' value={formData.calories_burned} />
                     </div>
-            </div>
-            <div className='row'>
-            <div className='col-3'></div>
-                <div className='col-6 form-group mt-4 d-flex justify-content-center mb-4'>
-                    <button className='btn btn-primary login-button'>Log Workout</button>
                 </div>
-            </div>
-        </form>
-    </div>
-  )
+                <div className='row'>
+                    <div className='col-3'></div>
+                    <div className='col-6 form-group mt-4 d-flex justify-content-center mb-4'>
+                        <button className='btn btn-primary login-button'>Log Workout</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    )
 }
 
 export default LogWorkoutForm

@@ -1,0 +1,9 @@
+.mealsForm {
+    border: 2px solid #55DDE0;
+    border-radius: 15px;
+    width: 60%;
+    min-height: 400px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 10px 10px 15px #55DDE0;
+}

@@ -57,10 +57,18 @@ export const AuthProvider = ({ children }) => {
         console.log(responseData);
     }
 
+    const logout = () => {
+        setToken('') //clearing saved tokens
+        setUser('')
+        localStorage.removeItem('token') //potentially want to clear entire ls
+        localStorage.removeItem('user')
+    }
+
     const value = {
         token,
         user,
         login,
+        logout,
         registerUser,
         isAuthenticated: token ? true : false
     }
